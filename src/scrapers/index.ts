@@ -1,0 +1,12 @@
+export { BaseStaticScraper } from './BaseStaticScraper.js';
+export { BaseDynamicScraper } from './BaseDynamicScraper.js';
+export { FulbrightScraper } from './FulbrightScraper.js';
+export { CheveningScraper } from './CheveningScraper.js';
+export { MITScraper } from './MITScraper.js';
+export { HarvardScraper } from './HarvardScraper.js';
+export { OxfordScraper } from './OxfordScraper.js';
+export { UNESCOScraper } from './UNESCOScraper.js';
+export { UNScraper } from './UNScraper.js';
+export { DAADScraper } from './DAADScraper.js';
+export { ErasmusScraper } from './ErasmusScraper.js';
+export { GovernmentPortalScraper } from './GovernmentPortalScraper.js';

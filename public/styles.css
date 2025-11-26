@@ -1,0 +1,427 @@
+/* CSS Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Search Form Styles */
+.search-form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-form select {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  min-width: 200px;
+}
+
+.search-form select:hover {
+  border-color: #3498db;
+}
+
+.search-form select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.search-form button {
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.search-form button:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+.search-form button:active {
+  transform: translateY(0);
+}
+
+/* Filter Controls Styles */
+.filter-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  white-space: nowrap;
+}
+
+.filter-controls select {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  min-width: 180px;
+}
+
+.filter-controls select:hover {
+  border-color: #3498db;
+}
+
+.filter-controls select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+#reset-filters-btn {
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  background-color: #f5f7fa;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+#reset-filters-btn:hover {
+  background-color: #e8ecf1;
+  border-color: #bbb;
+  color: #333;
+}
+
+#reset-filters-btn:active {
+  transform: scale(0.98);
+}
+
+/* Active Filters Display */
+.active-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  background-color: #e8f4fd;
+  border: 1px solid #b8dff5;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.active-filters .filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.active-filters .filter-tag .remove-filter {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.active-filters .filter-tag .remove-filter:hover {
+  opacity: 1;
+}
+
+.active-filters-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-right: 5px;
+}
+
+/* Results Display Styles */
+#results-count {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+#results {
+  display: grid;
+  gap: 20px;
+}
+
+.scholarship-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.scholarship-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.scholarship-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.scholarship-card .detail {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.scholarship-card .detail strong {
+  color: #333;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.scholarship-card a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.scholarship-card a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+/* Loading and Error States */
+.hidden {
+  display: none !important;
+}
+
+#loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #3498db;
+  font-weight: 500;
+}
+
+#loading::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  border: 3px solid #3498db;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#error {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  color: #c33;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .search-form select,
+  .search-form button {
+    width: 100%;
+    min-width: unset;
+    min-height: 44px;
+    font-size: 1rem;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .filter-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .filter-group label {
+    font-size: 0.9rem;
+  }
+
+  .filter-controls select {
+    width: 100%;
+    min-width: unset;
+    min-height: 44px;
+  }
+
+  #reset-filters-btn {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 24px;
+  }
+
+  .active-filters {
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .active-filters .filter-tag {
+    font-size: 0.85rem;
+  }
+
+  .scholarship-card {
+    padding: 20px;
+  }
+
+  .scholarship-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .scholarship-card .detail {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  .filter-controls {
+    padding: 12px;
+  }
+
+  .filter-group label {
+    font-size: 0.85rem;
+  }
+
+  .filter-controls select {
+    font-size: 0.9rem;
+  }
+
+  #reset-filters-btn {
+    font-size: 0.9rem;
+  }
+
+  .active-filters {
+    padding: 8px 12px;
+  }
+
+  .active-filters .filter-tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .scholarship-card {
+    padding: 16px;
+  }
+
+  .scholarship-card h3 {
+    font-size: 1.2rem;
+  }
+}
