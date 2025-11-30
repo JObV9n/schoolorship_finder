@@ -1,9 +1,9 @@
 {
   "name": "mcp_schoolorship",
   "version": "1.0.0",
-  "description": "",
+  "description": "Skool Er Ship",
   "license": "ISC",
-  "author": "",
+  "author": "JObV9n",
   "type": "module",
   "main": "server.js",
   "scripts": {
